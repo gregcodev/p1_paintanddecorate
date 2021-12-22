@@ -11,10 +11,11 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Header */
 .header {
     background-color: #35424a;
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     z-index: 3;
     border-bottom: #e8491d 3px solid;
@@ -62,12 +63,14 @@ header .logo .highlight, header .menu .current a {
     font-weight: bold;
 }
 
+/* Menu */
 .header .menu {
     clear: both;
     max-height: 0;
     transition: max-height 0.2s ease-out;
 }
 
+/* Menu Icon */
 .header .menu-icon {
     cursor: pointer;
     float: right;
@@ -103,18 +106,6 @@ header .logo .highlight, header .menu .current a {
     top: -5px;
 }
 
-.header .menu-btn {
-    display: none;
-}
-
-.header .menu-btn:checked  ~ .menu {
-    max-height: 240px;
-}
-
-.header .menu-btn:checked ~.menu-icon .nav-icon {
-    background: transparent;
-}
-
 /* Menu Button */
 .header .menu-btn {
     display: none;
@@ -136,4 +127,34 @@ header .logo .highlight, header .menu .current a {
 .header .menu-btn:checked ~ .menu-icon .nav-icon::after {
     transform: rotate(45deg);
     top: 0;
+}
+
+/* Showcase */
+.showcase {
+    width: 100%;
+    height: 70vw;
+    background: url(../images/showcase-img.webp) no-repeat center center/cover;
+}
+
+.showcase a {
+    text-decoration: none;
+    color: #fff;
+    padding-left: 20px;
+}
+
+.showcase-btn {
+    width: 120px;
+    height: 10px;
+    border: 1px solid #e8491d;
+    /* box-sizing: border-box; */
+    /* text-align: center; */
+    padding-bottom: 10px;
+    background-color: rgba(53, 66, 74, 0.5);
+}
+
+.showcase h2 {
+    font-size: 1.5em;
+}
+.showcase p {
+    font-size: 1em;
 }

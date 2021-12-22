@@ -7,7 +7,7 @@
 }
 
 body {
-    font: 15px/1.5 Open Sans, Helvitica, sans-serif;
+    font: 12px/1.5 Open Sans, Helvitica, sans-serif;
     background-color: #f4f4f4;
 }
 
@@ -29,12 +29,111 @@ body {
     overflow: hidden;
     background-color: #35424a;
 }
-
+ 
 .header li a {
     display: block;
-    padding: 20px 20px;
+    padding: 10px 20px;
     text-decoration: none;
     font-size: 1em;
     color: #fff;
+}
 
+.header li a:hover {
+    color: #ccc;
+    font-weight: bold;
+}
+
+.header .logo {
+    display: block;
+    float: left;
+    font-size: 0.55em;
+    padding: 10px 20px;
+    text-align: left;
+    text-decoration: none;
+    color: #fff;
+}
+
+.header .logo span {
+    font-size: 1.5em;
+}
+
+header .logo .highlight, header .menu .current a {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+.header .menu-icon {
+    cursor: pointer;
+    float: right;
+    padding: 35px 5px 10px;
+    position: relative;
+    user-select: none;
+}
+
+.header .menu-icon .nav-icon {
+    background: #fff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 18px;
+}
+
+.header .menu-icon .nav-icon::before, .header .menu-icon .nav-icon::after {
+    background: #fff;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .nav-icon::before {
+    top: 5px;
+}
+
+.header .menu-icon .nav-icon::after {
+    top: -5px;
+}
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked  ~ .menu {
+    max-height: 240px;
+}
+
+.header .menu-btn:checked ~.menu-icon .nav-icon {
+    background: transparent;
+}
+
+/* Menu Button */
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+}
+
+.header .menu-btn:checked ~.menu-icon .nav-icon::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon::after {
+    transform: rotate(45deg);
+    top: 0;
 }

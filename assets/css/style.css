@@ -184,6 +184,11 @@ header .menu .current a {
   border-radius: 5px;
   padding: 16px;
   margin: 16px 10px;
+  border: 2px solid #e8491d;
+  background-color: #c8c8c8;
+  padding: 10px;
+  float: none;
+  width: auto;
 }
 
 .testimonials::after {
@@ -193,20 +198,13 @@ header .menu .current a {
   clear: both;
 }
 
-.testimonials {
-  border: 2px solid #e8491d;
-  background-color: #c8c8c8;
-  padding: 10px;
-  float: none;
-  width: auto;
-}
-
 .client {
   text-align: center;
 }
 .testimonials img {
   margin: 0;
   border-radius: 50%;
+  width: 90px;
 }
 
 .testimonials p {
@@ -369,6 +367,10 @@ footer {
   color: #fff;
 }
 
+.social a {
+    text-decoration: none;
+}
+
 @media screen and (min-width: 768px) {
   /* breakpoint */
   .header {
@@ -409,18 +411,30 @@ footer {
     float: left;
     display: inline;
     width: 30.73%;
-    height: 60vh;
+    height: 65vh;
     border: 1px solid;
     box-sizing: border-box;
     border: 2px solid #e8491d;
     background-color: #c8c8c8;
+    margin: 1.3vw;
+  }
+
+  .testimonials img {
+    width: calc(90px + 3vw);
+  }
+  .testimonials p {
+    font-size: 2vw;
+  }
+
+  .testimonials span {
+    font-size: 3vw;
   }
 
   article.about {
     padding-bottom: 150px;
   }
 
-  article.about h2, p {
+  article.about h2 {
     font-size: 2em;
   }
 
@@ -431,16 +445,17 @@ footer {
   .services {
     float: left;
     display: inline;
-    width: 31.1%;
-    height: 60vh;
+    width: 30%;
+    height: 80vw;
     border: 1px solid;
     box-sizing: border-box;
     border: 2px solid #e8491d;
     background-color: #c8c8c8;
+    margin: 1.6%;
   }
 
   .services p {
-    font-size: 2em;
+    font-size: 2vw;
   }
 }
 @media screen and (min-width: 900px) {

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins&display=swap');
 /* Set all defaults to zero */
 
 * {
@@ -6,9 +7,21 @@
     border: 0;
 }
 
+h2 {
+    text-align: center;
+    font-family: Poppins, Helvitica, sans-serif;
+    font-weight: bold;
+}
+
 body {
     font: 12px/1.5 Open Sans, Helvitica, sans-serif;
     background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
 }
 
 /* Header */
@@ -136,6 +149,12 @@ header .logo .highlight, header .menu .current a {
     background: url(../images/showcase-img.webp) no-repeat center center/cover;
 }
 
+.showcase p {
+    text-align: center;
+    font-family: Poppins, Helvitica, sans-serif;
+    font-weight: bold;
+}
+
 .showcase a {
     text-decoration: none;
     color: #fff;
@@ -146,8 +165,7 @@ header .logo .highlight, header .menu .current a {
     width: 120px;
     height: 10px;
     border: 1px solid #e8491d;
-    /* box-sizing: border-box; */
-    /* text-align: center; */
+    text-align: center;
     padding-bottom: 10px;
     background-color: rgba(53, 66, 74, 0.5);
 }
@@ -157,4 +175,58 @@ header .logo .highlight, header .menu .current a {
 }
 .showcase p {
     font-size: 1em;
+}
+
+/* Testimonials */
+.testimonials {
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 10px;
+}
+
+.testimonials::after { /*clear float */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.testimonials {
+    border: 2px solid #e8491d;
+    background-color: #c8c8c8;
+    padding: 10px;
+    float: none;
+    width: auto;
+}
+
+.testimonials img {
+    margin: 0;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.testimonials p {
+    font-size: 1.5em;
+}
+
+.testimonials span {
+    font-size: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) { /* breakpoint */
+    .testimonials {
+        float: left;
+        display: inline;
+        width: 31%;
+        height: 55vh;
+        border: 1px solid;
+        box-sizing: border-box;
+        border: 2px solid #e8491d;
+        background-color: #c8c8c8;
+    }
+
+    
+
+    
 }

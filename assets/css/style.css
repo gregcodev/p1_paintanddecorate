@@ -67,7 +67,7 @@ body {
 }
 
 .header .logo span {
-    font-size: 1.5em;
+    font-size: 1.75em;
 }
 
 header .logo .highlight, header .menu .current a {
@@ -189,7 +189,7 @@ header .logo .highlight, header .menu .current a {
     clear: both;
 }
 
-.testimonials, .services {
+.testimonials {
     border: 2px solid #e8491d;
     background-color: #c8c8c8;
     padding: 10px;
@@ -209,7 +209,20 @@ header .logo .highlight, header .menu .current a {
     font-size: 1.5em;
 }
 
-.testimonials span, .services span {
+.testimonials span {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.services {
+    border: 2px solid #e8491d;
+    background-color: #c8c8c8;
+    padding: 10px;
+    float: none;
+    width: auto;
+}
+
+.services span {
     font-size: 30px;
     margin-right: 20px;
 }
@@ -352,12 +365,16 @@ footer {
 }
 
 @media screen and (min-width: 768px) { /* breakpoint */
+    .header {
+        height: 60px;
+    }
+
     .header li {
         float: left;
     }
     
     .header li a {
-        padding: 30px;
+        padding: 21px;
     }
 
     .header .menu {
@@ -385,12 +402,19 @@ footer {
     .testimonials {
         float: left;
         display: inline;
-        width: 29%;
+        width: 30.73%;
         height: 60vh;
         border: 1px solid;
         box-sizing: border-box;
         border: 2px solid #e8491d;
         background-color: #c8c8c8;
+    }
+
+    article.about {
+        padding-bottom: 150px;
+        /* float: left;
+        text-align: justify;
+        display: block; */
     }
 
     .gallery {
@@ -400,8 +424,8 @@ footer {
     .services {
         float: left;
         display: inline;
-        width: 25%;
-        height: 50vh;
+        width: 31.1%;
+        height: 60vh;
         border: 1px solid;
         box-sizing: border-box;
         border: 2px solid #e8491d;

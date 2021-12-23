@@ -189,7 +189,7 @@ header .logo .highlight, header .menu .current a {
     clear: both;
 }
 
-.testimonials {
+.testimonials, .services {
     border: 2px solid #e8491d;
     background-color: #c8c8c8;
     padding: 10px;
@@ -209,7 +209,7 @@ header .logo .highlight, header .menu .current a {
     font-size: 1.5em;
 }
 
-.testimonials span {
+.testimonials span, .services span {
     font-size: 30px;
     margin-right: 20px;
 }
@@ -299,6 +299,25 @@ aside.sidebar .contact input, aside.sidebar .contact textarea {
     width: 100%;
 }
 
+.services {
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 10px;
+}
+
+.services::after { /*clear float */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.services {
+    border: 2px solid #e8491d;
+    background-color: #c8c8c8;
+    padding: 10px;
+    float: none;
+    width: auto;
+    }
 /* Footer with links to Social Networks */
 footer {
     padding: 10px;
@@ -306,11 +325,11 @@ footer {
     color: #fff;
     background-color: #e8491d;
     text-align: center;
-}
+    }
 
 .social {
     text-align: center;
-}
+    }
 
 .social li {
     display: inline;
@@ -378,6 +397,16 @@ footer {
         column-count: 2;
     }
 
+    .services {
+        float: left;
+        display: inline;
+        width: 25%;
+        height: 50vh;
+        border: 1px solid;
+        box-sizing: border-box;
+        border: 2px solid #e8491d;
+        background-color: #c8c8c8;
+    }
 }
 @media screen and (min-width: 900px) { /* breakpoint */
     .gallery {

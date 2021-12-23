@@ -294,6 +294,11 @@ aside.sidebar .contact input, aside.sidebar .contact textarea {
     padding: 5px;
 }
 
+/* Gallery Page */
+.gallery img {
+    width: 100%;
+}
+
 /* Footer with links to Social Networks */
 footer {
     padding: 10px;
@@ -369,4 +374,13 @@ footer {
         background-color: #c8c8c8;
     }
 
+    .gallery {
+        column-count: 2;
+    }
+
+}
+@media screen and (min-width: 900px) { /* breakpoint */
+    .gallery {
+        column-count: 3;
+    }
 }
